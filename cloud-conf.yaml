@@ -1,0 +1,19 @@
+#cloud-config
+groups:
+  - admingroup: [root,sys]
+  - cloud-users
+
+users:
+  - default
+  - name: qubiq
+    groups: users
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC+VYyXU/D0AhxOxRcXhGfUr2FiKX5p7jGQFDboSWYBMG4doTG9X44G7D+CAzQ9ovnv1BxeddzAolKn/PCnIIYTgaMIJV/nR1nj+S8cXWo/PomWSi8/haEXOPeGrioxGspTJuXyEV5r5G0Xtzwu4iZKHH2bKbExJrIlw6lokuxA2obtOqeas/4gv9Qk5fPQXbl5OjCKq5VjJf3Etueh7WLsTcDP0RTxqB9oIz2K0zG1iYHSrDvKXwq5xeO6bJj52DaNjBs+0LghvFl6zZ2MwyTEPOm+Ec2tX1cszbgrDkWmV44dzFqmJ8LD7woq11DkieDmnctebiY+H08OSh65UqOXOZ9I1m1a3gU3IKTtSuV+ITOalIIWreCKeC8In+WBGUjtb43YsBokOH/qY6u4WT7Am0n5kM1NRgu30nogOk6YZ6DW3qpXOb4HYjqETtZbJkwxX0k4D7HIXdsAhTZyCzOmhMocpVXNWpx9nRccqcGS7QrJ7OELoXBBwOEQfp9rON8= v.mordovin@macbook-LLKF269LR9
+  - name: g.oganesyan
+    groups: users
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCkzSpQKYDBB72EWqNTBBi80aVG5wAJex9wQPKMyKrzqiV85/wGgvjsF5OvmIeIgfJdqlwJbdg1tCgH7ncurKw036oWh2XAckXjqBQryrwfsKBL66i3bphdfyApXNSSI+1uE9695FTOGIDx4pxEVXw8Ywn1aEpauQ2mrS7VLr3UTxCpcU5shDd+Qtd9T/yMwkBgAgmr7ugi64Mw9JJxeBLDT8uwL6mSVoUx6G2ojP9MukgT7nGb3c8eB0eahh/Az3/OR24dwDDhK1ixECoG/yFwV1Gk9B8vyKPcpFqMlD3qlCKyO1tQF78DK6scKxzDePRrD/myKCCLBcW4pEMxFXHx rsa-key-teraform
